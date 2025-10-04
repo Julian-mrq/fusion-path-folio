@@ -61,7 +61,7 @@ const Education = () => {
                         <span className="text-muted-foreground text-sm mt-1 md:mt-0">{item.period}</span>
                       </div>
                       <p className="text-accent font-medium mb-2">{item.institution}</p>
-                      <p className="text-foreground/80">{item.description}</p>
+                      <p className="text-foreground/80 text-justify">{item.description}</p>
                     </div>
                   </div>
                 </div>
@@ -79,7 +79,7 @@ const Education = () => {
             {projects.map((project, index) => (
               <div key={index} className="bg-card shadow-card hover:shadow-hover transition-smooth rounded-lg p-6 border border-border">
                 <h4 className="text-lg font-semibold text-primary mb-3">{project.title}</h4>
-                <p className="text-foreground/80 mb-4 text-sm leading-relaxed">{project.description}</p>
+                <p className="text-foreground/80 mb-4 text-sm leading-relaxed text-justify">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
                     <span

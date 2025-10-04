@@ -3,7 +3,7 @@ const About = () => {
     <section id="about" className="py-20 px-6 bg-muted/30">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-8 text-primary">About Me</h2>
-        <div className="space-y-6 text-lg text-foreground/80 leading-relaxed">
+        <div className="space-y-6 text-lg text-foreground/80 leading-relaxed text-justify">
           <p>
             I'm a final-year engineering student with a specialization in <span className="font-semibold text-foreground">data science and artificial intelligence</span>, 
             currently pursuing advanced studies in finance to merge my technical expertise with business acumen.

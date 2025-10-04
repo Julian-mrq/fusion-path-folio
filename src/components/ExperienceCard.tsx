@@ -16,7 +16,7 @@ const ExperienceCard = ({ title, company, period, description, skills }: Experie
         </div>
         <span className="text-muted-foreground mt-2 md:mt-0">{period}</span>
       </div>
-      <p className="text-foreground/80 mb-4 leading-relaxed">{description}</p>
+      <p className="text-foreground/80 mb-4 leading-relaxed text-justify">{description}</p>
       <div className="flex flex-wrap gap-2">
         {skills.map((skill, index) => (
           <span

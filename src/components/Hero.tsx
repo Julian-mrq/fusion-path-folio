@@ -1,10 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center gradient-hero text-white px-6">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
+        <div className="mb-8 inline-block">
+          <img 
+            src={profilePhoto} 
+            alt="John Anderson - Professional Profile" 
+            className="w-40 h-40 rounded-full border-4 border-white/30 shadow-hover object-cover mx-auto"
+          />
+        </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
           John Anderson
         </h1>

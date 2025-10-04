@@ -39,7 +39,7 @@ const Activities = () => {
                 </div>
                 <h3 className="text-lg font-semibold text-primary mb-2">{activity.title}</h3>
                 <p className="text-accent font-medium text-sm mb-3">{activity.organization}</p>
-                <p className="text-foreground/80 text-sm leading-relaxed">{activity.description}</p>
+                <p className="text-foreground/80 text-sm leading-relaxed text-justify">{activity.description}</p>
               </div>
             );
           })}

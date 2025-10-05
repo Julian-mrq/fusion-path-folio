@@ -4,8 +4,19 @@ import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center gradient-hero text-white px-6">
-      <div className="max-w-4xl mx-auto text-center animate-fade-in">
+    <section className="min-h-screen flex items-center justify-center relative text-white px-6 overflow-hidden">
+      {/* Background image - replace with your own */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" 
+          alt="Hero background" 
+          className="w-full h-full object-cover"
+        />
+        {/* Blue overlay filter */}
+        <div className="absolute inset-0 bg-primary/70"></div>
+      </div>
+      
+      <div className="max-w-4xl mx-auto text-center animate-fade-in relative z-10">
         <div className="mb-8 inline-block">
           <img 
             src={profilePhoto} 

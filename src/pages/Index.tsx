@@ -19,7 +19,7 @@ const Index = () => {
       
       <footer className="bg-primary text-primary-foreground py-8 px-6 text-center">
         <p className="text-sm">
-          © 2025 John Anderson. All rights reserved.
+          © 2025 Julian Marques. All rights reserved.
         </p>
       </footer>
     </div>

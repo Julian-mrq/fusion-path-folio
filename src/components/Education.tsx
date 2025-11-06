@@ -4,34 +4,39 @@ const educationItems = [
   {
     icon: TrendingUp,
     degree: "Master in Finance",
-    institution: "Business School of Excellence",
-    period: "2024 - Present",
-    description: "Specializing in corporate finance, financial markets, and quantitative methods.",
+    institution: "Université Paris Dauphine - PSL",
+    period: "2025 - Present",
+    description: "Corporate finance: financial analysis, business valuation, IFRS, private equity. Market finance: capital markets, fixed income markets, derivatives, econometrics.",
   },
   {
     icon: GraduationCap,
-    degree: "Engineering Degree - Data Science",
-    institution: "Engineering Institute of Technology",
-    period: "2020 - 2024",
-    description: "Major in Data Science and Artificial Intelligence with honors. Graduated top 10% of class.",
+    degree: "Engineering Degree",
+    institution: "Université de Technologie de Troyes",
+    period: "2020 - 2025",
+    description: "Integrated preparatory classes: mathematics, physics, computer science. Major in data science: mathematics, machine and deep learning, data analysis, software development.",
   },
 ];
 
 const projects = [
   {
-    title: "AI-Powered Trading Algorithm",
-    description: "Developed a machine learning model to predict stock price movements using sentiment analysis and technical indicators.",
-    technologies: ["Python", "Keras", "Pandas", "API Integration"],
+    title: "Budget management app",
+    description: "Created an automatized excel file to manage my budget with VBA.",
+    technologies: ["Excel", "VBA"],
   },
   {
-    title: "Customer Churn Prediction System",
-    description: "Built an end-to-end ML pipeline to predict customer churn for a telecom company with 89% accuracy.",
-    technologies: ["Scikit-learn", "XGBoost", "Flask", "Docker"],
+    title: "Company valuation",
+    description: "Used DFC and multiples methods, gathered data to analyse the valuation of Salesforce.",
+    technologies: ["Financial analysis", "Business valuation"],
   },
   {
-    title: "Financial Dashboard Analytics",
-    description: "Created an interactive dashboard for real-time financial data visualization and KPI tracking.",
-    technologies: ["React", "D3.js", "PostgreSQL", "REST API"],
+    title: "Option pricing using Deep Learning",
+    description: "Developed Deep Learning models to optimize European option pricing. Preprocessed and analyzed data, creation of a database.",
+    technologies: ["Python", "Deep Learning"],
+  },
+  {
+    title: "Portfolio optimization",
+    description: "Created a python-based application for portfolio optimization based on Modern Portfolio Theory. Financial data retrieval, calculation of returns, volatility, VaR, and efficient frontier, result visualization.",
+    technologies: ["Python"],
   },
 ];
 
@@ -73,7 +78,7 @@ const Education = () => {
         <div>
           <h3 className="text-2xl font-semibold mb-6 text-foreground flex items-center gap-2">
             <Code className="h-6 w-6 text-accent" />
-            AI & Data Science Projects
+            Projects
           </h3>
           <div className="grid md:grid-cols-2 gap-6">
             {projects.map((project, index) => (

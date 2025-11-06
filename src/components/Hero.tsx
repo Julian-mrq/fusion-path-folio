@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Download } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
+import backgroundPhoto from "@/assets/background.jpg";
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
       {/* Background image - replace with your own */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" 
+          src={backgroundPhoto}
           alt="Hero background" 
           className="w-full h-full object-cover"
         />
@@ -20,18 +21,18 @@ const Hero = () => {
         <div className="mb-8 inline-block">
           <img 
             src={profilePhoto} 
-            alt="John Anderson - Professional Profile" 
+            alt="Julian Marques - Professional Profile" 
             className="w-40 h-40 rounded-full border-4 border-white/30 shadow-hover object-cover mx-auto"
           />
         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-          John Anderson
+          Julian Marques
         </h1>
         <p className="text-xl md:text-2xl mb-4 text-white/90 font-light">
-          Engineering Student | Data Science Specialist | Finance Aspirant
+          Engineering and corporate finance student
         </p>
         <p className="text-lg md:text-xl mb-8 text-white/80 max-w-2xl mx-auto font-light">
-          Bridging the worlds of technology and finance to drive data-driven decision making in corporate finance
+          Building my knowledge to shape the future of corporate finance
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
@@ -47,9 +48,12 @@ const Hero = () => {
             size="lg" 
             variant="outline"
             className="bg-white/10 border-white/30 text-white hover:bg-white/20"
+            asChild
           >
-            <Download className="mr-2 h-4 w-4" />
-            Download CV
+            <a href="/CV_Julian_Marques.pdf" download="CV_Julian_Marques.pdf">
+              <Download className="mr-2 h-4 w-4" />
+              Download CV
+            </a>
           </Button>
         </div>
       </div>

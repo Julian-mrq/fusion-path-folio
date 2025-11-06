@@ -2,26 +2,22 @@ import ExperienceCard from "./ExperienceCard";
 
 const experiences = [
   {
-    title: "Data Science Intern",
-    company: "Tech Innovations Corp",
-    period: "Jun 2024 - Sep 2024",
-    description: "Developed predictive models for customer behavior analysis, increasing retention rates by 15%. Collaborated with cross-functional teams to implement ML solutions in production environments.",
-    skills: ["Python", "Machine Learning", "SQL", "Data Visualization", "A/B Testing"],
+    title: "Credit Risk Data Science Intern",
+    company: "BNP Paribas CIB",
+    logo: "src/assets/bnp_logo.jpg",
+    period: "Feb 2025 - Aug 2025",
+    description: "Developed predictive models for default predictions in corporate credits. Developed an MVP application for anomaly detection models, increasing outliers detection by 90%. \nCollaborated with cross-functional teams to automate and implement ML solutions in production environments. \nAnalyzed 400k credit data and used NLP for extraction, uncovering +20 important report informations.",
+    skills: ["Python", "Machine Learning", "Data analysis", "SQL"],
   },
   {
-    title: "Financial Analyst Intern",
-    company: "Investment Partners Ltd",
-    period: "Jan 2024 - May 2024",
-    description: "Conducted financial modeling and valuation analysis for M&A transactions. Prepared investment memorandums and performed due diligence on potential acquisition targets.",
-    skills: ["Financial Modeling", "Excel", "Valuation", "M&A Analysis", "PowerPoint"],
+    title: "Strategy & Operations Intern",
+    company: "Pretto",
+    logo: "src/assets/pretto_logo.jpg",
+    period: "July 2023 - Dec 2023",
+    description: "Processed and analyzed data, creating KPIs in Python and BI software (Excel, Datastudio) to improve the company’s performance and strategy. \nRestructured the company database (+10M rows) using SQL. Improved brokerage software by analyzing real-estate market changes.",
+    skills: ["Data analysis", "Data visualisation", "Software development"],
   },
-  {
-    title: "Research Assistant",
-    company: "University AI Lab",
-    period: "Sep 2023 - Dec 2023",
-    description: "Contributed to research on natural language processing applications in financial sentiment analysis. Published findings in a peer-reviewed conference.",
-    skills: ["NLP", "TensorFlow", "Research", "Academic Writing", "Data Analysis"],
-  },
+  
 ];
 
 const Experience = () => {

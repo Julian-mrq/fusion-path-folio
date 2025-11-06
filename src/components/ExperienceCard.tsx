@@ -2,13 +2,11 @@ interface ExperienceCardProps {
   title: string;
   company: string;
   logo?: string;
-  logo?: string;
   period: string;
   description: string;
   skills: string[];
 }
 
-const ExperienceCard = ({ title, company, logo, period, description, skills }: ExperienceCardProps) => {
 const ExperienceCard = ({ title, company, logo, period, description, skills }: ExperienceCardProps) => {
   return (
     <div className="bg-card shadow-card hover:shadow-hover transition-smooth rounded-lg p-6 border border-border">
